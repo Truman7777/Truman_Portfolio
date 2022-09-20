@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "TTCrownMychewR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/TTCrownMychewR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --maincolor: #fa780a;
+}
+
+span {
+  font-size: 36px;
+  font-family: "TTCrownMychewR";
+  margin-left: 12px;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 80px;
+  margin-left: 80px;
+  font-size: 30px;
+  font-family: "TTCrownMychewR";
+  box-shadow: -4px -4px 5px -2px var(--maincolor),
+    4px 4px 5px -2px var(--maincolor);
+  transition: all 0.3s;
+}
+
+button:hover {
+  box-shadow: -4px -4px 5px 2px var(--maincolor),
+    4px 4px 5px 2px var(--maincolor);
+}
+
+button:active {
+  box-shadow: -4px -4px 5px 2px var(--maincolor),
+    4px 4px 5px 2px var(--maincolor);
+  transition: all 0.1s;
+}
+
+.myName {
+  text-decoration: underline solid var(--maincolor);
+}

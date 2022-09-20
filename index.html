@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <span class="myName">What is your name?</span>
+      <button onclick="revealMyInfo('My name is Junsik', '.myName', 'green')">
+        이름 확인하러 가기
+      </button>
+      <button onclick="goback(0)">다시 돌아가기</button>
+    </div>
+    <div>
+      <span class="myJob">What is your job?</span>
+      <button onclick="revealMyInfo('My job is developer', '.myJob', 'red')">
+        직업 확인하러 가기
+      </button>
+      <button onclick="goback(1)">다시 돌아가기</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
