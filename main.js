@@ -8,9 +8,20 @@ function goback(index) {
   }
 }
 
-function revealMyInfo(myInfo, className, color) {
+function revealMyInfo(myInfo, className, color, animationName) {
   let htmlElement = document.querySelector(className);
 
   htmlElement.innerHTML = myInfo;
   htmlElement.style.color = color;
+
+  if (animationName === "bgFadeOut") {
+    htmlElement.style.animationDuration = "2s";
+    htmlElement.style.animationName = animationName;
+  } else if (animationName === "slideIn") {
+    htmlElement.style.animationDuration = "2s";
+    htmlElement.style.animationName = animationName;
+  } else if (animationName === "heartBeat") {
+    htmlElement.style.animationDuration = "2s";
+    htmlElement.style.animationName = animationName;
+  }
 }

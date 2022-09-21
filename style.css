@@ -6,8 +6,49 @@
   font-style: normal;
 }
 
+@keyframes bgFadeOut {
+  0% {
+    background-color: var(--mainColor);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    margin-left: 10%;
+  }
+
+  100% {
+    margin-left: 0%;
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    font-size: 36px;
+  }
+  25% {
+    font-size: 44px;
+  }
+
+  50% {
+    font-size: 36px;
+  }
+
+  75% {
+    font-size: 44px;
+  }
+
+  100% {
+    font-size: 36px;
+  }
+}
+
 :root {
-  --maincolor: #fa780a;
+  --mainColor: #fa780a;
 }
 
 span {
@@ -24,22 +65,22 @@ button {
   margin-left: 80px;
   font-size: 30px;
   font-family: "TTCrownMychewR";
-  box-shadow: -4px -4px 5px -2px var(--maincolor),
-    4px 4px 5px -2px var(--maincolor);
+  box-shadow: -4px -4px 5px -2px var(--mainColor),
+    4px 4px 5px -2px var(--mainColor);
   transition: all 0.3s;
 }
 
 button:hover {
-  box-shadow: -4px -4px 5px 2px var(--maincolor),
-    4px 4px 5px 2px var(--maincolor);
+  box-shadow: -4px -4px 5px 2px var(--mainColor),
+    4px 4px 5px 2px var(--mainColor);
 }
 
 button:active {
-  box-shadow: -4px -4px 5px 2px var(--maincolor),
-    4px 4px 5px 2px var(--maincolor);
+  box-shadow: -4px -4px 5px 2px var(--mainColor),
+    4px 4px 5px 2px var(--mainColor);
   transition: all 0.1s;
 }
 
 .myName {
-  text-decoration: underline solid var(--maincolor);
+  text-decoration: underline solid var(--mainColor);
 }
